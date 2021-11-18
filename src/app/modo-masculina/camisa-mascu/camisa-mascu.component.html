@@ -1,0 +1,134 @@
+<nav class="breadcrumb "  >
+  <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+      <li class="breadcrumb-item"><a routerLink="/moda-masculina" >Moda masculina</a></li>
+      <li class="breadcrumb-item active">Camisa</li>
+  </ol>
+</nav>
+<button mat-button [matMenuTriggerFor]="animals">Camisa masculina  <mat-icon class="icon">arrow_right</mat-icon>
+</button>
+<mat-menu #animals="matMenu">
+    <a routerLink="/camisa-polo"><button mat-menu-item > Camisa polo </button></a> 
+    <a routerLink="/camisa-longa"><button mat-menu-item > Camisa Longa</button></a> 
+    <a routerLink="/camisa-perso"><button mat-menu-item >Camisa Personalizado </button></a>
+</mat-menu>
+<br>
+<br>
+
+<h2>Camisa</h2>
+
+<div class="artigo">
+  <table class="tabela"> 
+      <tr>
+          <th>
+              <article>
+                  <div class="imagem">
+                      <img
+                          src="https://a-static.mlcdn.com.br/618x463/camisa-polo-piquet-com-gola-degrade-e-bolso-marinho-veneri/digaspi-lojaonline/16367/f1c5764333d3abaea9dfc7df49190209.jpg">
+                  </div>
+                  <div class="descricao">
+                      <h2> Polo preta </h2>
+                  </div>
+                  <div class="valor">
+                      <h3>R$ 80,00</h3>
+                  </div>
+                  <div class="botao">
+                    <button mat-raised-button >Comprar</button>
+                  </div>
+              </article>
+          </th>
+          <th>
+              <article>
+                  <div class="imagem">
+                      <img src="https://static.netshoes.com.br/produtos/camisa-polo-lacoste-original-fit-masculina/88/D66-0138-788/D66-0138-788_zoom1.jpg?ts=1560997147&ims=544x">
+                  </div>
+                  <div class="descricao">
+                      <h2> Polo vermelha </h2>
+                  </div>
+                  <div class="valor">
+                      <h3>R$ 87,00</h3>
+                  </div>
+                  <div class="botao">
+                    <button mat-raised-button >Comprar</button>
+                  </div>
+              </article>
+          </th>
+          <th>
+              <article>
+                  <div class="imagem">
+                      <img
+                          src="https://static.riachuelo.com.br/RCHLO/14349698004/portrait/a1f8e03f45aa8a80aa2c500460ad6a3644a143d3.jpg?imwidth=272 ">
+                  </div>
+                  <div class="descricao">
+                      <h2> Camisa longa - Azul </h2>
+                  </div>
+                  <div class="valor">
+                      <h3>R$ 67,00</h3>
+                  </div>
+                  <div class="botao">
+                    <button mat-raised-button >Comprar</button>
+                  </div>
+              </article>
+          </th>
+      </tr>
+      <tr>
+          <th>
+              <article>
+                  <div class="imagem">
+                      <img src="https://cdn.iset.io/assets/53692/produtos/1320/camiseta-manga-longa-reserva-azul-marinho-1.jpg 
+          ">
+                  </div>
+                  <div class="descricao">
+                      <h2> Camisa longa - preta </h2>
+                  </div>
+                  <div class="valor">
+                      <h3>R$ 103,99</h3>
+                  </div>
+                  <div class="botao">
+                    <button mat-raised-button >Comprar</button>
+                  </div>
+              </article>
+          </th>
+          <th>
+              <article>
+                  <div class="imagem">
+                      <img
+                          src="https://images-americanas.b2w.io/produtos/01/00/img/2086879/0/2086879078_1GG.jpg ">
+                  </div>
+                  <div class="descricao">
+                      <h2> Camisa personalizada</h2>
+                  </div>
+                  <div class="valor">
+                      <h3>R$ 140,00</h3>
+                  </div>
+                  <div class="botao">
+                    <button mat-raised-button >Comprar</button>
+                  </div>
+              </article>
+          </th>
+          <th>
+            <article>
+                <div class="imagem">
+                    <img
+                        src="https://static.dafiti.com.br/p/Oakley-Camisa-Manga-Curta-Oakley-Summer-Azul-6984-0725612-1-zoom.jpg 
+
+                        ">
+                </div>
+                <div class="descricao">
+                    <h2> Camisa xadrez</h2>
+                </div>
+                <div class="valor">
+                    <h3>R$ 140,00</h3>
+                </div>
+                <div class="botao">
+                    <button mat-raised-button >Comprar</button>
+                </div>
+            </article>
+        </th>
+       
+      
+      </tr>
+  </table>
+</div>
+
+

@@ -1,0 +1,62 @@
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar> <a routerLink="/home"><img src="https://i.pinimg.com/originals/63/6b/d3/636bd3cca4ff3f7adc61c1431b247770.jpg" width="110%"></a></mat-toolbar>
+    <mat-nav-list >
+      <br>
+      <h2>Moda Masculina</h2>
+      <a mat-list-item routerLink="/camisa-masculina">Camisa</a>
+      <a mat-list-item routerLink="/calca-masculina">Calça</a>
+      <a mat-list-item routerLink="/bermuda-masculina">Bermuda</a>
+      <a mat-list-item routerLink="/camiseta-masculina">Camisetas</a>
+      <a mat-list-item routerLink="/regata-masculina">Regata</a>
+      <a mat-list-item routerLink="/short-masculina">Short</a>
+      <a mat-list-item routerLink="/moletom-masculina">Moletom</a>
+      <a mat-list-item routerLink="/camiseta-de-time-masculina">Camisa de time</a>
+      <a mat-list-item routerLink="/cueca-masculina">Cueca</a>
+      <a mat-list-item routerLink="/casaco-masculina">Casaco</a>
+      <br>
+
+      <h2>Moda Feminina</h2>
+      <a mat-list-item routerLink="/blusa-feminina">Blusa</a>
+      <a mat-list-item routerLink="/calca-feminina">Calça</a>
+      <a mat-list-item routerLink="/conjunto-feminina">Conjunto</a>
+      <a mat-list-item routerLink="/saia-feminina">Saia</a>
+      <a mat-list-item routerLink="/regata-feminina">Regata</a>
+      <a mat-list-item routerLink="/short-feminina">Short</a>
+      <a mat-list-item routerLink="/body-feminina">body</a>
+      <a mat-list-item routerLink="/vestido-feminina">vestido</a>
+      <a mat-list-item routerLink="/macacao-feminina">macacao</a>
+      <a mat-list-item routerLink="/casaco-feminina">Casaco</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span> Big Store </span>
+      <span class="espaco"></span>
+      
+      <mat-icon class="icon">favorite_border</mat-icon>
+      <mat-icon class="icon">home</mat-icon>
+      <mat-icon class="icon">account_circle</mat-icon>
+      
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    
+    <ng-content></ng-content>
+    
+    
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
